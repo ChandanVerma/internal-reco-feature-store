@@ -1,5 +1,5 @@
 # Feature Store
-This codebase preprocesses events data every 4 hours and store updated data into Redis Feature store. If any questions, please reach out to Data Science team (Thulasiram, Chandan).
+This codebase preprocesses events data every 4 hours and store updated data into Redis Feature store.
 
 # Set-up .env file
 There needs to be a `.env` file with following parameters.
