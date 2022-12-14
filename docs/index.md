@@ -8,10 +8,10 @@ AWS_ACCESS_KEY_ID='XXXXX'
 AWS_SECRET_ACCESS_KEY='XXXXXX'
 AWS_REGION='us-east-2'
 
-REDIS_IP = 'localhost'
+REDIS_IP = 'recommended-api-cache-dev.o6v01l.ng.0001.use2.cache.amazonaws.com'
 REDIS_PORT = 6379
-ASSET_FS_DB = 8
-USER_FS_DB = 9
+ASSET_FS_DB = 1
+USER_FS_DB = 1
 ```
 
 # Instructions (Docker)

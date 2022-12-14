@@ -1,0 +1,20 @@
+version: '3'
+services:
+  int-recommendations-feature-store:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    image: int-recommendations-feature-store:latest
+    env_file:
+      - .env
+    runtime: nvidia
+    devices:
+      - /dev/nvidia0:/dev/nvidia0
+      - /dev/nvidiactl:/dev/nvidiactl
+      - /dev/nvidia-modeset:/dev/nvidia-modeset
+      - /dev/nvidia-uvm:/dev/nvidia-uvm
+      - /dev/nvidia-uvm-tools:/dev/nvidia-uvm-tools
+    working_dir: /app
+    volumes:
+    - ./:/app
+    command: bash -c "python preprocessing_pipeline.py"

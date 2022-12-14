@@ -1,0 +1,2 @@
+<em> This code base consists of entire preprocessing pipeline which convert raw data(3 months rolling window) to data which can be consumed by the ML model. Also this preprocessed data will be further stored in Redis Feature store at an interval of every 4 hours. </em>
+:::feature_store.preprocessing_pipeline

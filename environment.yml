@@ -1,0 +1,23 @@
+name:
+  feature_store
+
+channels:
+  - rapidsai
+  - nvidia
+  - conda-forge
+  - defaults
+
+dependencies:
+  - rapids=22.8
+  - python=3.9
+  - cudatoolkit=11.4
+  - numpy
+  - pandas
+  - PyYAML
+  - pip
+  - pip:
+    - redis
+    - s3fs
+    - python-dotenv
+    - logzero
+    - boto3

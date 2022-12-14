@@ -1,0 +1,9 @@
+numpy
+pandas
+PyYAML
+pip
+redis
+s3fs
+python-dotenv
+logzero
+boto3

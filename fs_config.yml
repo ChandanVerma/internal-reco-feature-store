@@ -1,0 +1,28 @@
+s3_bucket_name: lomotif-datalake-prod
+
+target_encoding_columns : ["USER_ID_H", "PC_1_H", "ASSET_ID_H"]
+count_encoding_columns : ["ASSET_ID_H", "USER_ID_H"]
+
+req_columns : ['USER_ID', 'ASSET_ID', 'PC_1', 'PC_1_H', 'ASSET_ID_H',
+                          'USER_ID_H', 'target']
+
+model_features: ['USER_ID', 'ASSET_ID', 'PC_1', 'PC_1_H', 'ASSET_ID_H',
+                          'USER_ID_H', 'TE_USER_ID_H', 'TE_PC_1_H', 'TE_ASSET_ID_H', 'CE_ASSET_ID_H',
+                          'CE_USER_ID_H', 'target']
+
+user_feature_list: ["user_id", "prob_user_watch", "user_vv"]
+
+asset_feature_list: ["lomotif_id",'prob_pc_1_watch', "lomotif_vv", "prob_asset_watch"]
+
+col_rename: {'USER_ID' : "user_id", 
+             'ASSET_ID' : "lomotif_id", 
+             'PC_1' : "primary_category_1", 
+             'PC_1_H': "primary_category_1_hash",
+             'ASSET_ID_H': "lomotif_id_hash",           
+             'USER_ID_H': "user_id_hash",
+             'TE_USER_ID_H': "prob_user_watch", 
+             'TE_PC_1_H': "prob_pc_1_watch",
+             'TE_ASSET_ID_H' : "prob_asset_watch", 
+             'CE_ASSET_ID_H': "lomotif_vv",
+             'CE_USER_ID_H': "user_vv", 
+             'target': "target"}

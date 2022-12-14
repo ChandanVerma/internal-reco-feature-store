@@ -1,0 +1,17 @@
+site_name: Internal Recommendations
+site_url: https://gitlab.com/lomotif/datascience/poc/model_based_recommendations
+nav:
+    - Project Installation: index.md
+    - feature_store/update_feature_store.py: update_feature_store.md
+    - feature_store/preprocessing_pipeline.py: preprocessing_pipeline.md
+
+plugins:
+  - mkdocstrings
+
+theme: 
+    name: material
+    palette:
+        # scheme: preference uses dark or light mode based on user (OS) preference
+        scheme: dark
+        primary: deep-blue
+        accent: deep-purple
